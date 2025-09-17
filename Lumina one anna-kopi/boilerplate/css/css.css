@@ -1,0 +1,136 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  background-color: floralwhite;
+
+  /* Herobilledet i baggrunden*/
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*læg teksten i midten vertikalt og horisontalt*/
+title {
+display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#topNav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.HeroTekst{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items:flex-start;
+  margin-left: 200px;
+  
+}
+
+.container {
+  display: flex;          /* aktiverer flexbox */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 20px;              /* afstand mellem billede og tekst */
+}
+
+.container img {
+  width: 200px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+}
+
+.tekst {
+  max-width: 400px;        /* evt. begrænsning af tekstbredde */
+}
+
+.container img {
+  flex: 0 0 35%;  /* billedet tager 35% af bredden */
+  max-width: 100%; 
+  height: auto;
+}
+
+.tekst {
+  flex: 1;   /* fylder alt det resterende plads */
+}
+
+
+.container {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 140px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+}
+
+.container img {
+  width: 200px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+}
+
+.tekst {
+  max-width: 400px;       /* evt. begrænsning af tekstbredde */
+}
+
+.tekst h2 {
+  text-align: left;     /* overskrift venstrestillet */
+  margin-bottom: 10px;
+}
+
+.tekst p {
+  text-align: left;  /* brødtekst med lige margener */
+}
+
+.button {
+  background-color: #282119;
+  border: none;
+  color: #fafafa;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 4px;
+}
+
+.button1 {border-radius: 50px;}
+
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
