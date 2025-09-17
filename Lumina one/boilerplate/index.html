@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jura:wght@300&display=swap');
+</style>
   <title>Lumina one</title>
   <link rel="stylesheet" href="css/css.css">
+
 </head>
 <body>
 
@@ -23,9 +28,9 @@
   <div class="Menu">
       <a href="x"> ☰ Menu</a>
   </div>  
+     <!-- Logo i midten -->
   <div id="TopLogo">
-    <title>LUMINA</title>
-    <title>Nordic sound</title>
+    <img src="images/Logo.png" alt="Logo" width="175px" height="65px">
   </div>
 
   <!-- symboler: person, søg, kurv --> 
@@ -61,10 +66,11 @@
 
 
 
-
+<!--1. sektion med LUMINA one-->
   <section>
- <div class="container-a">
 
+<!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
+ <div class="container-a">
 
 
     <img
@@ -72,38 +78,40 @@
         alt="Lumina one om dagen" >
 
 
+  <!--tekstgrupperingen-->
     <div class="Luminadagen">
 
-    <h2>Lumina one</h2>
-    <h3>Portable Bluetooth Speaker</h3>
+      <h2>Lumina one</h2>
+      <h3>Portable Bluetooth Speaker</h3>
        <p>Big sound, sleek design, and up to 18 hours of</p>
        <p>playtime. With customizable ambient lighting,</p> 
        <p>Bluetooth 5.3 connectivity, and IPX5 water resistance,</p>
        <p>LUMINA one is your perfect companion for beach days,</p>
        <p> park picnics, or cozy nights.</p>
        
+       <!--stjerner til trustpilot-->
        <img
        src="images/Stjerner.png"
        alt="stjerner"
        class="stjerner">
- 
-  
        <p>Over 3K reviews on Trustpilot</p>
-       
+
+       <!--Ny gruppe med vandrette linjer-->
         <div class="vandret-linje"></div>
-       
+
+        <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
        <p>Moonlight white <img
        src="images/farver.png"
        alt="farver"
        class="image"></p>
        
-      
+      <!--Ny vandret linje-->
        <div class="vandret-linje"></div>
 
-       <button class="button-button2">ADD TO CART </button>
-       <span class="tekst">1995 kr.</span>
 
-       
+      <!--CTA knap  og pris til køb-->
+       <button class="button-button2">ADD TO CART </button>
+       <span class="tekst">1995 kr.</span>   
   </div>
 </div>
 </section>
@@ -123,9 +131,11 @@
 
 
 <section>
+  <!--2. sektion med features-->
 
-
+  <!--Der laves to grupperinger, som er flex og video. -->
 <div class="flex-container">
+  <!--Her er en undergruppering-->
   <div class="text-content">
       <h2>LUMINA one</h2>
     <h3>Features</h3>
@@ -139,21 +149,24 @@
        <div class="vandret-linje"></div>
       
   </div>
-  <div class="image-content">
-    <img src="images/luminaone.png" alt="højtaler">
-  </div>
+<!--Anden gruppering ses-->
+  <div class="video-content">
+    <video width="320" height="240" autoplay muted loop>
+    <source src="images/Luminavideo.mov" >
+    </source>
+</video>  
 </div>
-
 </section>
 
 
   
 
 
-
+<!--3. sektion-->
 <section>
  <div class="container-b">
 
+  <!-- Billede af Lumina one i gavekassen-->
     <img
         src="images/Luminagift.png"
         alt="Lumina one som gave" width="400px" height="400px" >
@@ -174,6 +187,8 @@
 
        <br>
        <p>For all the moments that deserve a soundtrack</p>
+
+       <!-- Vandret linje til opdeling samt billede af farvevalg til højtaleren-->
         <div class="vandret-linje"></div>  
        <p>Moonlight white <img
        src="images/farver.png"
@@ -181,6 +196,7 @@
        class="image"></p>
        
       
+       <!-- Vandret linje igen og knap med pris i sektion 1,2 og 3. -->
        <div class="vandret-linje"></div>
 
        <button class="button-button2">ADD TO CART </button>

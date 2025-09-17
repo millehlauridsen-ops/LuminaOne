@@ -28,6 +28,85 @@
 
 }
 
+/* Design system */
+
+/* Tekst udseende*/
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;} */
+
+  /* font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+h1{ 
+   font-family: "Jura", sans-serif;
+   font-size: 3.6em;
+   font-weight: 500;
+
+}
+
+h2{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal; 
+
+}
+h3{
+  font-family: "Jura", sans-serif;
+   font-size: 1.8em;
+   font-weight: 300;
+   
+}
+
+h4{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+p{
+     font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,74 +173,39 @@ display: flex;
 
 
 
+/* 1. Sektion*/
 
-
-.tekst {
-  max-width: 400px;        /* evt. begrænsning af tekstbredde */
-}
-
+/*placering af billede*/
 .container-a img {
   flex: 0 0 35%;  /* billedet tager 35% af bredden */
   max-width: 100%; 
   height: auto;
 }
 
-.tekst {
-  flex: 1;   /* fylder alt det resterende plads */
-}
 
 
 .container-a {
   display: flex;          /* aktiverer flexbox */
   justify-content: center; /* centrerer indhold vandret */
   align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 140px;              /* afstand mellem billede og tekst */
+  gap: 150px;              /* afstand mellem billede og tekst */
   min-height: 100vh;       /* så det kan centreres lodret */
 }
 
+
+/*størrelse på stjerner og farvepalette*/
 .container-a img {
-  width: 200px;           /* giv billedet en fast bredde */
+  width: 100px;           /* giv billedet en fast bredde */
   height: auto;           /* bevar proportioner */
-  border-radius: 50px; /* Juster denne værdi for at ændre rundingen */
+}
+
+/*afrunding af hjørner på højtaler*/
+.container-a img {  border-radius: 50px; /* Juster denne værdi for at ændre rundingen */
 }
 
 
 
-
-
-.tekst {
-  max-width: 400px;       /* evt. begrænsning af tekstbredde */
-}
-
-.tekst h2 {
-  text-align: left;     /* overskrift venstrestillet */
-  margin-bottom: 10px;
-}
-
-.tekst p {
-  text-align: left;  /* brødtekst med lige margener */
-}
-
-
-
-
-
- .image {
-      vertical-align: middle; /* Eller top, bottom, baseline, text-bottom, text-top */
-      /* Tilføj eventuelt andre styles, som margin for at skabe luft omkring billedet */
-      margin-left: 120px;
-      height: 100px; /* Juster højden efter behov */
-    }
-
-
-  
-
-.vandret-linje {
-        border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
-        margin: 10px 0; /* Tilføj lidt plads over og under */
-    }
-
-
+/*CTA knap i sektion 1 og 3*/
 .button-button2 {
   background-color: var(--farve_mørkebrun);
   border: none;
@@ -174,9 +218,11 @@ display: flex;
   margin: 6px 4px;
 }
 
-
+/*Knap bliver rund*/
 .button-button2 {border-radius: 50px;}
 
+
+/*Mellemrum mellem knap og pris*/
  .button-button2 {
           margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
         }
@@ -185,74 +231,7 @@ display: flex;
         }
 
 
-
-
-
-
-
-
-
-
-
-.tekst-content {
-  max-width: 400px;        /* evt. begrænsning af tekstbredde */
-}
-
-.image-content img {
-  max-width: 100%; 
-  height: auto;
-}
-
-.tekst-content {
-  flex: 1;   /* fylder alt det resterende plads */
-}
-
-
-.flex-container {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: center; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 140px;              /* afstand mellem billede og tekst */
-  min-height: 100vh;       /* så det kan centreres lodret */
-}
-
-
-.image-content img {
-  width: 500px;           /* giv billedet en fast bredde */
-  height: auto;           /* bevar proportioner */
-}
-
-.image-content img {
- margin-left: auto; /* Skubber billedet helt til højre */
-}
-
-
-
-.tekst {
-  max-width: 400px;       /* evt. begrænsning af tekstbredde */
-}
-
-.tekst h2 {
-  text-align: left;     /* overskrift venstrestillet */
-  margin-bottom: 10px;
-}
-
-.tekst p {
-  text-align: left;  /* brødtekst med lige margener */
-}
-
-
-
-
-
- .image {
-      vertical-align: middle; /* Eller top, bottom, baseline, text-bottom, text-top */
-      /* Tilføj eventuelt andre styles, som margin for at skabe luft omkring billedet */
-      margin-left: 120px;
-      height: 100px; /* Juster højden efter behov */
-    }
-
-
+/*Vandrette linjer i både sektion 1, 2 og 3*/
 .vandret-linje {
         border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
         margin: 10px 0; /* Tilføj lidt plads over og under */
@@ -264,16 +243,33 @@ display: flex;
 
 
 
+/* 2. Sektion */
+.flex-container {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 300px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+}
 
 
 
-
+/*Selvlavet plus-ikon*/
   .plus-icon {
       display: inline-block; /* eller inline-block */
       width: 10px;
       height: 10px;
       position: relative;
     }
+
+/*Positionen af plus-ikon*/
+    .plus-icon {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: right; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 10px;              /* afstand mellem billede og tekst */
+  min-height: 1vh;       /* så det kan centreres lodret */
+}
 
     .plus-icon::before,
     .plus-icon::after {
@@ -282,7 +278,7 @@ display: flex;
       background-color: var(--farve_mørkebrun); /* Farven på plusset */
     }
 
-    /* Den horisontale streg */
+ /* Den horisontale streg */
     .plus-icon::before {
       width: 100%;
       height: 2px;
@@ -291,7 +287,7 @@ display: flex;
       transform: translateY(-50%);
     }
 
-    /* Den vertikale streg */
+/* Den vertikale streg */
     .plus-icon::after {
       width: 2px;
       height: 100%;
@@ -301,13 +297,13 @@ display: flex;
     }
 
 
-.plus-icon {border-radius: 50px;}
 
+/*mellemrum ved linjer i højden og bredde*/
  .plus-icon {
-          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
+          margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
         }
  .plus-icon {
-          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
+          margin-left: 500px; /* Tilføjer 10 pixels mellemrum */
         }
 
 
@@ -315,79 +311,33 @@ display: flex;
 
         
 
+/* 3. Sektion */
 
-.tekst {
-  max-width: 100px;        /* evt. begrænsning af tekstbredde */
-}
-
+/*Afstand mellem billede og tekst*/
 .container-b img {
   flex: 0 0 35%;  /* billedet tager 35% af bredden */
-  max-width: 100%; 
-  height: auto;
 }
 
-.tekst {
-  flex: 1;   /* fylder alt det resterende plads */
-}
-
-
+/*position af billede og afstand mellem tekst og billede.*/
 .container-b {
   display: flex;          /* aktiverer flexbox */
   justify-content:flex-start; /*billedet starter i starten af siden */
   align-items: center;
-  gap: 380px;            /* afstand mellem billede og tekst */
+  gap: 350px;            /* afstand mellem billede og tekst */
   
 }
 
+/*Størrelse på farvepalette*/
 .container-b img {
-  width: 200px;           /* giv billedet en fast bredde */
+  width: 100px;           /* giv billedet en fast bredde */
   height: auto;           /* bevar proportioner */
   
 }
 
 
 
-.tekst h2 {
-  text-align: left;     /* overskrift venstrestillet */
-  margin-bottom: 10px;
-}
-
-.tekst p {
-  text-align: left;  /* brødtekst med lige margener */
-}
 
 
-
-
-
-
-.vandret-linje {
-        border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
-        margin: 10px 0; /* Tilføj lidt plads over og under */
-    }
-
-
-.button-button2 {
-  background-color: var(--farve_mørkebrun);
-  border: none;
-  color: var(--farve_moonlightwhite);
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 6px 4px;
-}
-
-
-.button-button2 {border-radius: 50px;}
-
- .button-button2 {
-          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
-        }
- .tekst {
-          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
-        }
 
 
 /* Define variables in the :root */
