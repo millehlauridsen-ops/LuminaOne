@@ -1,0 +1,378 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Design system */
+
+/* Farver */
+:root{
+--farve_mørkebrun: #282119; 
+--farve_mørkeorange: #a54d27; 
+--farve_beige: #e5d8bd; 
+--farve_moonlightwhite: #fafafa; 
+
+--farve_brun: #65371f; 
+--farve_orange: #c97338; 
+
+}
+
+/* Tekst udseende*/
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;} */
+
+  /* font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+h1{ 
+   font-family: "Jura", sans-serif;
+   font-size: 3.6em;
+   font-weight: 500;
+
+}
+
+h2{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal; 
+
+}
+h3{
+  font-family: "Jura", sans-serif;
+   font-size: 1.8em;
+   font-weight: 300;
+   
+}
+
+h4{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+p{
+     font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+/* free tote bag  */
+
+#FreeTote{
+  height: 40px;
+  align-content: center;
+  background-color: var(--farve_mørkebrun);
+}
+
+a{
+  color: var(--farve_moonlightwhite);
+   margin-left: 40px;
+  font-family: "Jura", sans-serif;
+}
+
+/* topNav */
+
+#topNav a{
+  text-decoration: none;
+}
+
+title{
+  color: var(--farve_moonlightwhite);
+}
+
+
+
+
+
+
+
+
+
+/* Hero start */
+
+header {
+  height: 100vh;
+  background-color: var(--farve_moonlightwhite);
+
+  /* Herobilledet i baggrunden*/
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*læg teksten i midten vertikalt og horisontalt*/
+title {
+display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#topNav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.HeroTekst{
+  height: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items:flex-start;
+  margin-left: 120px;
+  color: var(--farve_moonlightwhite);
+
+  
+}
+
+.button1 {
+  background-color: var(--farve_mørkebrun);
+  border: none;
+  color: var(--farve_moonlightwhite);
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 4px;
+}
+
+.button1 {border-radius: 50px;}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--farve_mørkebrun);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--farve_moonlightwhite);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--farve_mørkeorange);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px var(--farve_mørkeorange);
+  
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Slider position på siden */
+#slider {
+  height: 200px;
+  position: relative;
+}
+
+#slider {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* Hero slut */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;          /* aktiverer flexbox */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 20px;              /* afstand mellem billede og tekst */
+}
+
+.container img {
+  width: 200px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+}
+
+.tekst {
+  max-width: 400px;        /* evt. begrænsning af tekstbredde */
+}
+
+.container img {
+  flex: 0 0 35%;  /* billedet tager 35% af bredden */
+  max-width: 100%; 
+  height: auto;
+}
+
+.tekst {
+  flex: 1;   /* fylder alt det resterende plads */
+}
+
+
+.container {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 140px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+}
+
+.container img {
+  width: 200px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+}
+
+.tekst {
+  max-width: 400px;       /* evt. begrænsning af tekstbredde */
+}
+
+.tekst h2 {
+  text-align: left;     /* overskrift venstrestillet */
+  margin-bottom: 10px;
+}
+
+.tekst p {
+  text-align: left;  /* brødtekst med lige margener */
+}
+
+
+
+.button2 {
+  background-color: #282119;
+  border: none;
+  color: #fafafa;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 4px;
+}
+
+.button2 {border-radius: 50px;}
+
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
