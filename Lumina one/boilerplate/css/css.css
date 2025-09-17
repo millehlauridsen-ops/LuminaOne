@@ -4,11 +4,33 @@
  **/
 
 /* Remove whitespace on top of certain browsers */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+
+/* Design system */
+
+/* Farver */
+:root{
+--farve_mørkebrun: #282119; 
+--farve_mørkeorange: #a54d27; 
+--farve_beige: #e5d8bd; 
+--farve_moonlightwhite: #fafafa; 
+
+--farve_brun: #65371f; 
+--farve_orange: #c97338; 
+
+}
+
+
+
+
 
 header {
   height: 100vh;
@@ -50,16 +72,29 @@ display: flex;
   
 }
 
-.container {
-  display: flex;          /* aktiverer flexbox */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 20px;              /* afstand mellem billede og tekst */
-}
 
-.container img {
-  width: 200px;           /* giv billedet en fast bredde */
-  height: auto;           /* bevar proportioner */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tekst {
   max-width: 400px;        /* evt. begrænsning af tekstbredde */
@@ -89,6 +124,10 @@ display: flex;
   height: auto;           /* bevar proportioner */
 }
 
+
+
+
+
 .tekst {
   max-width: 400px;       /* evt. begrænsning af tekstbredde */
 }
@@ -102,10 +141,28 @@ display: flex;
   text-align: left;  /* brødtekst med lige margener */
 }
 
-.button {
-  background-color: #282119;
+
+
+
+
+ .image {
+      vertical-align: middle; /* Eller top, bottom, baseline, text-bottom, text-top */
+      /* Tilføj eventuelt andre styles, som margin for at skabe luft omkring billedet */
+      margin-left: 120px;
+      height: 100px; /* Juster højden efter behov */
+    }
+
+
+.vandret-linje {
+        border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
+        margin: 10px 0; /* Tilføj lidt plads over og under */
+    }
+
+
+.button-button2 {
+  background-color: var(--farve_mørkebrun);
   border: none;
-  color: #fafafa;
+  color: var(--farve_moonlightwhite);
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -114,7 +171,145 @@ display: flex;
   margin: 6px 4px;
 }
 
-.button1 {border-radius: 50px;}
+
+.button-button2 {border-radius: 50px;}
+
+ .button-button2 {
+          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
+        }
+ .tekst {
+          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
+        }
+
+
+
+
+
+
+
+
+
+
+
+.tekst-content {
+  max-width: 400px;        /* evt. begrænsning af tekstbredde */
+}
+
+.image-content img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.tekst-content {
+  flex: 1;   /* fylder alt det resterende plads */
+}
+
+
+.flex-container {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 140px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+}
+
+
+.image-content img {
+  width: 500px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+}
+
+.image-content img {
+ margin-left: auto; /* Skubber billedet helt til højre */
+}
+
+
+
+.tekst {
+  max-width: 400px;       /* evt. begrænsning af tekstbredde */
+}
+
+.tekst h2 {
+  text-align: left;     /* overskrift venstrestillet */
+  margin-bottom: 10px;
+}
+
+.tekst p {
+  text-align: left;  /* brødtekst med lige margener */
+}
+
+
+
+
+
+ .image {
+      vertical-align: middle; /* Eller top, bottom, baseline, text-bottom, text-top */
+      /* Tilføj eventuelt andre styles, som margin for at skabe luft omkring billedet */
+      margin-left: 120px;
+      height: 100px; /* Juster højden efter behov */
+    }
+
+
+.vandret-linje {
+        border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
+        margin: 10px 0; /* Tilføj lidt plads over og under */
+    }
+
+
+
+
+
+
+
+
+
+
+
+  .plus-icon {
+      display: inline-block; /* eller inline-block */
+      width: 10px;
+      height: 10px;
+      position: relative;
+    }
+
+    .plus-icon::before,
+    .plus-icon::after {
+      content: '';
+      position: absolute;
+      background-color: var(--farve_mørkebrun); /* Farven på plusset */
+    }
+
+    /* Den horisontale streg */
+    .plus-icon::before {
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    /* Den vertikale streg */
+    .plus-icon::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+.plus-icon {border-radius: 50px;}
+
+ .plus-icon {
+          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
+        }
+ .plus-icon {
+          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
+        }
+
+
+
+        
 
 
 /* Define variables in the :root */
