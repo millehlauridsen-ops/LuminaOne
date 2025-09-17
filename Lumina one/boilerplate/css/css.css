@@ -106,14 +106,42 @@ p{
 
 
 
+/* free tote bag  */
+#FreeTote{
+  height: 40px;
+  align-content: center;
+  background-color: var(--farve_mørkebrun);
+}
+
+a{
+  color: var(--farve_moonlightwhite);
+   margin-left: 40px;
+  font-family: "Jura", sans-serif;
+}
+
+
+
+/* topNav */
+#topNav a{
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+title{
+  color: var(--farve_moonlightwhite);
+}
 
 
 
 
+
+
+
+/* Hero start */
 
 header {
   height: 100vh;
-  background-color: floralwhite;
+  background-color: var(--farve_moonlightwhite);
 
   /* Herobilledet i baggrunden*/
   background-image: url('../images/hero.png');
@@ -128,7 +156,6 @@ title {
 display: flex;
   justify-content: center;
   align-items: flex-start;
-
 }
 
 #topNav{
@@ -136,20 +163,123 @@ display: flex;
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+  height: 200px;
+  background-color: linear-gradient(to top, transparent, #282119)
 }
-
-
 
 .HeroTekst{
   height: 400px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items:flex-start;
-  margin-left: 200px;
+  margin-left: 120px;
+  color: var(--farve_moonlightwhite);
+}
+
+.button1 {
+  background-color: var(--farve_mørkebrun);
+  border: none;
+  color: var(--farve_moonlightwhite);
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 4px;
+}
+
+/* runde kanter på knap */
+.button1 {border-radius: 50px;}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--farve_mørkebrun);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--farve_moonlightwhite);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--farve_mørkeorange);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px var(--farve_mørkeorange);
   
 }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Slider position på siden */
+#slider {
+  height: 300px;
+  position: relative;
+}
+
+#slider {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* Hero slut */
+
+
+
+
+
 
 
 
@@ -334,6 +464,42 @@ display: flex;
   
 }
 
+
+#SHARE{
+  margin-left: 50px;
+  color: var(--farve_mørkeorange);
+}
+
+.Luminatesektion{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: karrusel-animation 20s infinite alternate;
+}
+.karrusel{
+  width: 100%;
+  height: 200px;
+  .slides{
+    width: 300%;
+    display: flex;
+  }
+  img{
+    width: calc(50% / 7);
+    height: 400px;
+    margin: 10px;
+    object-fit: contain;
+  }
+}
+
+@keyframes karrusel-animation {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-60%);
+  }
+}
 
 
 
