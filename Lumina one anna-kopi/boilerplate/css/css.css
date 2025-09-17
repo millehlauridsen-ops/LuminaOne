@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 /* Design system */
@@ -24,7 +25,53 @@
 
 }
 
+/* Tekst udseende*/
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;} */
 
+  /* font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+h1{ 
+   font-family: "Jura", sans-serif;
+   font-size: 3.6em;
+   font-weight: 500;
+   
+
+}
+
+h2{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal; 
+
+}
+h3{
+  font-family: "Jura", sans-serif;
+   font-size: 1.8em;
+   font-weight: 300;
+   
+}
+
+h4{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 
 /* Hero start */
@@ -34,7 +81,7 @@
 
 header {
   height: 100vh;
-  background-color: floralwhite;
+  background-color: var(--farve_moonlightwhite);
 
   /* Herobilledet i baggrunden*/
   background-image: url('../images/hero.png');
@@ -63,19 +110,22 @@ display: flex;
 
 .HeroTekst{
   height: 400px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items:flex-start;
-  margin-left: 200px;
+  margin-left: 100px;
+  color: var(--farve_moonlightwhite);
+
   
 }
 
 .button1 {
-  background-color: #282119;
+  background-color: var(--farve_mørkebrun);
   border: none;
-  color: #fafafa;
+  color: var(--farve_moonlightwhite);
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
@@ -109,7 +159,7 @@ display: flex;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #282119;
+  background-color: var(--farve_mørkebrun);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -121,17 +171,18 @@ display: flex;
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--farve_moonlightwhite);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--farve_mørkeorange);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 5px var(--farve_mørkeorange);
+  
 }
 
 input:checked + .slider:before {
@@ -149,7 +200,20 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Slider position på siden */
+#slider {
+  height: 200px;
+  position: relative;
+}
 
+#slider {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 
 
