@@ -78,10 +78,42 @@ p{
   font-style: normal;
 }
 
+
+
+
+/* free tote bag  */
+
+#FreeTote{
+  height: 40px;
+  align-content: center;
+  background-color: var(--farve_mørkebrun);
+}
+
+a{
+  color: var(--farve_moonlightwhite);
+   margin-left: 40px;
+  font-family: "Jura", sans-serif;
+}
+
+/* topNav */
+
+#topNav a{
+  text-decoration: none;
+}
+
+title{
+  color: var(--farve_moonlightwhite);
+}
+
+
+
+
+
+
+
+
+
 /* Hero start */
-
-
-
 
 header {
   height: 100vh;
@@ -120,7 +152,7 @@ display: flex;
   gap: 10px;
   justify-content: center;
   align-items:flex-start;
-  margin-left: 100px;
+  margin-left: 120px;
   color: var(--farve_moonlightwhite);
 
   
@@ -135,7 +167,7 @@ display: flex;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 6px 4px;
+  margin: 30px 4px;
 }
 
 .button1 {border-radius: 50px;}
