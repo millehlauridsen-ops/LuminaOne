@@ -41,7 +41,6 @@ h1{
    font-family: "Jura", sans-serif;
    font-size: 3.6em;
    font-weight: 500;
-   
 
 }
 
@@ -73,6 +72,12 @@ h5{
   font-style: normal;
 }
 
+p{ 
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Hero start */
 
