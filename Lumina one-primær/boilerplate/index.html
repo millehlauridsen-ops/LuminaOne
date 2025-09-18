@@ -60,10 +60,41 @@
 
 <!-- Rounded switch 17/09-->
  <Section id="slider">
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
+
+    <label class="switch">
+      <input type="checkbox" id="toggleSwitch">
+      <span class="slider round"></span>
   </label>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('toggleSwitch');
+
+  // Robust bestemmelse af filnavn (lowercase så case ikke driller)
+  const filename = window.location.pathname.split('/').pop().toLowerCase();
+
+  // Sæt initial tilstand INDEN vi sætter event listener
+  if (filename === 'darkmode.html') {
+    toggle.checked = true;
+  } else {
+    toggle.checked = false;
+  }
+
+  // Når brugeren ændrer togglen → skift side
+  toggle.addEventListener('change', function () {
+    if (this.checked) {
+      window.location.href = 'DarkMode.html';
+    } else {
+      window.location.href = 'index.html';
+    }
+  });
+});
+</script>
+  
+<article id="pil"> 
+  <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+</article>
+
 </Section>
 
 

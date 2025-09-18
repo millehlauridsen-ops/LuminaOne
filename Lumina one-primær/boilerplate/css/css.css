@@ -281,6 +281,13 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%);
 }
 
+#pil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--farve_moonlightwhite);
+}
+
 
 /* Hero slut */
 
