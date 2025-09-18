@@ -457,11 +457,11 @@ input:checked + .slider:before {
   
 }
 
+
 /*Størrelse på farvepalette*/
 .container-b img {
   width: 100px;           /* giv billedet en fast bredde */
   height: auto;           /* bevar proportioner */
-  
 }
 
 
