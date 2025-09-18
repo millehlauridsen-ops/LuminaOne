@@ -7,6 +7,7 @@
    <style>
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jura:wght@300&display=swap');
+
 </style>
   <title>Lumina one</title>
   <link rel="stylesheet" href="css/css.css">
@@ -46,11 +47,14 @@
 
 <section class="HeroTekst">
   <h1>Turn music into moments</h1>
+  <aside class="heroundertekst">
   <h3>Live it together.</h3>
   <h3>Play it louder.</h3>
+  </aside>
 
  <!--lavet d. 17/09-->
   <button class="button button1">BUY NOW</button>
+
 
 </section>
 
@@ -70,43 +74,50 @@
 
 
 <!--1. sektion med LUMINA one-->
-  <section>
+  <section id="sektionProdukt">
 
 <!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
  <div class="container-a">
 
-
-    <img
+    <img class="billede1"
         src="images/Luminaoneangle.png"
         alt="Lumina one om dagen" >
+    
 
 
   <!--tekstgrupperingen-->
     <div class="Luminadagen">
 
-      <h2>Lumina one</h2>
-      <h3>Portable Bluetooth Speaker</h3>
+      <h5>Lumina one</h5>
+      <h2>Portable Bluetooth Speaker</h2>
+      <br>
        <p>Big sound, sleek design, and up to 18 hours of</p>
        <p>playtime. With customizable ambient lighting,</p> 
        <p>Bluetooth 5.3 connectivity, and IPX5 water resistance,</p>
        <p>LUMINA one is your perfect companion for beach days,</p>
        <p> park picnics, or cozy nights.</p>
+       <br>
        
        <!--stjerner til trustpilot-->
        <img
        src="images/Stjerner.png"
        alt="stjerner"
        class="stjerner">
-       <p>Over 3K reviews on Trustpilot</p>
+       <h5>Over 3K reviews on Trustpilot</h5>
 
        <!--Ny gruppe med vandrette linjer-->
         <div class="vandret-linje"></div>
 
         <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
-       <p>Moonlight white <img
+        <section class="farvevalg">
+       <p>Moonlight white </p>
+        
+       <aside>
+        <img
        src="images/farver.png"
        alt="farver"
-       class="image"></p>
+       class="image"></aside>
+       </section>
        
       <!--Ny vandret linje-->
        <div class="vandret-linje"></div>
@@ -114,7 +125,7 @@
 
       <!--CTA knap  og pris til køb-->
        <button class="button-button2">ADD TO CART </button>
-       <span class="tekst">1995 kr.</span>   
+       <span class="tekst">1.995 kr.</span>   
   </div>
 </div>
 </section>
@@ -123,52 +134,99 @@
 
 
 
-<section>
+<section id="sektionFeatures">
   <!--2. sektion med features-->
 
   <!--Der laves to grupperinger, som er flex og video. -->
 <div class="flex-container">
   <!--Her er en undergruppering-->
   <div class="text-content">
-      <h2>LUMINA one</h2>
-    <h3>Features</h3>
-      <p>Sound <span class="plus-icon"></span></p>
-       <div class="vandret-linje"></div>
-       <p>Design <span class="plus-icon"></span> </p> 
-       <div class="vandret-linje"></div>
-       <p>Power <span class="plus-icon"></span> </p>
-       <div class="vandret-linje"></div>
-       <p>Social connection <span class="plus-icon"></span> </p>
-       <div class="vandret-linje"></div>
+      <h5>LUMINA one</h5>
+    <h2>Features</h2>
+    <br>
+    <section class="features"> 
+        <div class="vandret-linje"></div>
+          <div class="feature"><h4>Sound</h4><span class="plus-icon"></span></div>
       
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Design</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Power</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Social connection</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+      </section>
   </div>
 <!--Anden gruppering ses-->
-  <div class="video-content">
-    <video width="400" height="720" autoplay muted loop>
-    <source src="images/Luminavideo (online-video-cutter.com).mp4" >
-    </source>
+  <div class="video-content" controls poster="poster.jpg">
+    <video src="images/Luminavideo (online-video-cutter.com).mp4" type="video/mp4" autoplay loop
+    width="500px" height="620px"> 
+
 </video>  
 </div>
 </section>
+
+
+
+
+<!-- Luminate yourself -->
+<section id="LumineYourselfSektion">
+  <section>
+  <br><br><br>
+  <section class="SHARE">
+  <h4>SHARE WITH US</h4>
+  <h1>Luminate yourself</h1>
+  <p>Shared moments make life meaningful. With LUMINA ONE, music becomes the heartbeat of every </p>
+  <p>gathering — bringing people closer and turning simple get-togethers into unforgettable memories.</p>
+  <br><br>
+  <h4>Tag us at @Lumina on Instagram to share your moment!</h4>
+  </section>
+  </section>
+
+  <section class="Luminatesektion"> 
+
+  <div class="karrusel">
+    <div class="slides">
+    <img src="images/luminateboardgame.png" alt="img1">
+    <img src="images/ISengen.png" alt="img2">
+    <img src="images/Girlsnight_square.png" alt="img3">
+    <img src="images/PåStranden.png" alt="img4">
+    <img src="images/Kvinde med speaker.png" alt="img5">
+    <img src="images/Lumina_night_rooftop_square.png" alt="img6">
+    <img src="images/Lumina_day_pige_hygge_square.png" alt="img7">
+    </div>
+  </div>
+  </section>
+</section>
+
+
+
+
+
+
+
 
 
   
 
 
 <!--3. sektion-->
-<section>
+<section id="sektionGave">
  <div class="container-b">
 
   <!-- Billede af Lumina one i gavekassen-->
-    <img
-        src="images/Luminagift.png"
-        alt="Lumina one som gave" width="400px" height="400px" >
+    <img id="gave"
+        src="images/kvadratgave.png"
+        alt="Lumina one som gave" 
+        width="800px" height="auto">
+        
  
 
     <div class="Luminagave">
 
-    <h2>LUMINA one</h2>
-    <h3>The one perfect gift</h3>
+    <h5>LUMINA one</h5>
+    <h2>The one perfect gift</h2>
+    <br>
        <p>Looking for something that is both stylish and </p>
        <p>meaningful? Lumina One is the perfect choice. With </p> 
        <p>
@@ -179,14 +237,20 @@
        <p>make it ready for parties, beach days, or quiet nights in.</p>
 
        <br>
-       <p>For all the moments that deserve a soundtrack</p>
+       <p id="bold">For all the moments that deserve a soundtrack</p>
 
        <!-- Vandret linje til opdeling samt billede af farvevalg til højtaleren-->
         <div class="vandret-linje"></div>  
-       <p>Moonlight white <img
+      
+    <section class="farvevalg">
+       <p>Moonlight white </p>
+        
+       <aside>
+        <img
        src="images/farver.png"
        alt="farver"
-       class="image"></p>
+       class="image"></aside>
+       </section>
        
       
        <!-- Vandret linje igen og knap med pris i sektion 1,2 og 3. -->
@@ -200,30 +264,8 @@
 </div>
 </section>
 
-<section id="SHARE">
-  <br><br><br>
-  <h4>SHARE WITH US</h4>
-  <h1>Luminate yourself</h1>
-  <p>Shared moments make life meaningful. With LUMINA ONE, music becomes the heartbeat of every </p>
-  <p>gathering — bringing people closer and turning simple get-togethers into unforgettable memories.</p>
-  <br><br>
-  <h4>Tag us at @Lumina on Instagram to share your moment!</h4>
-</section>
 
-<section class="Luminatesektion"> 
 
-  <div class="karrusel">
-    <div class="slides">
-    <img src="images/luminateboardgame.png" alt="img1">
-    <img src="images/ISengen.png" alt="img2">
-    <img src="images/Girlsnight_square.png" alt="img3">
-    <img src="images/PåStranden.png" alt="img4">
-    <img src="images/Kvinde med speaker.png" alt="img5">
-    <img src="images/Lumina_night_rooftop_square.png" alt="img6">
-    <img src="images/Lumina_day_pige_hygge_square.png" alt="img7">
-    </div>
-  </div>
-</section>
 
 
 
