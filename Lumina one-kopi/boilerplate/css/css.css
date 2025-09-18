@@ -664,6 +664,89 @@ margin-left: 50px;
 }
 
 
+/*Footer*/
+
+.footer{
+  margin-top: 50px;
+  width: 100%;
+  padding: 100px 5%;
+  background: var(--farve_mørkebrun);
+  color: var(--farve_moonlightwhite);
+  margin-bottom: 10px;
+}
+
+
+
+.footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
+        gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
+        a{
+          margin-left: 0px;
+        }
+    }
+
+.col-3{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_moonlightwhite);
+  margin-bottom: 15px;
+}
+
+.col-2 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_moonlightwhite);
+  margin-bottom: 15px;
+}
+
+.col-3 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_moonlightwhite);
+  margin-bottom: 15px;
+}
+
+.col-4 a{
+  display:block;
+  height: 600px;
+  text-decoration: none;
+  color:var(--farve_moonlightwhite);
+  margin-bottom: 15px;
+}
+
+
+.copyright{
+  display: flex;
+  justify-content: baseline;
+  align-items: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
