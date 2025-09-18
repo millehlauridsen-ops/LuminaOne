@@ -211,7 +211,7 @@ display: flex;
 
 /* The slider */
 .slider {
-  position: absolute;
+  position:absolute;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -260,7 +260,7 @@ input:checked + .slider:before {
 
 /* Slider position på siden */
 #slider {
-  height: 300px;
+  height: 150px;
   position: relative;
 }
 
